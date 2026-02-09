@@ -24,13 +24,9 @@ Title: `[Task] Add my name to contributors`
 
 ## 2. Create a branch
 
-On the issue page, click `Create a branch` in the right sidebar.
+See [Create a branch](../git-workflow.md#create-a-branch).
 
-Alternatively, use the terminal:
-
-```terminal
-git checkout -b add-contributor
-```
+Use `<add-contributor>` instead of the `<branch-name>`.
 
 ## 3. Add your name
 
