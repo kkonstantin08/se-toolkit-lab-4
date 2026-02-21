@@ -42,7 +42,7 @@ The [file extension](./file-system.md#extension) (e.g., [`.json`](#json), [`.tom
 
 `Markdown` gets translated into [`HTML`](https://en.wikipedia.org/wiki/HTML).
 
-You see the rendered `HTML` when you [open the `Markdown` preview](./vs-code.md#open-the-markdown-preview) in `VS Code` or view a `Markdown` file on `GitHub`.
+You see the rendered `HTML` when you [open the `Markdown` preview](./vs-code.md#open-the-markdown-preview) in `VS Code` or view a `Markdown` file on [`GitHub`](./github.md).
 
 #### `Markdown` docs
 
@@ -52,7 +52,7 @@ You see the rendered `HTML` when you [open the `Markdown` preview](./vs-code.md#
 
 - [`lab/appendix/file-formats.md`](./file-formats.md) — this file.
 - [`README.md`](../../README.md) — project overview.
-- [`.github/pull_request_template.md`](../../.github/pull_request_template.md) — `GitHub` pull request template.
+- [`.github/pull_request_template.md`](../../.github/pull_request_template.md) — [`GitHub` pull request](./github.md#pull-request) template.
 
 ### `JSON`
 
@@ -125,7 +125,7 @@ server:
 
 #### `YAML` in this project
 
-- [`.github/workflows/`](../../.github/workflows/) — `GitHub Actions` workflow files.
+- [`.github/workflows/`](../../.github/workflows/) — [`GitHub Actions`](./github.md) workflow files.
 - [`docker-compose.yml`](../../docker-compose.yml) — [`Docker Compose`](./docker-compose.md) service definitions.
 
 ### `.env`
@@ -146,7 +146,7 @@ SECRET_KEY=changeme
 
 #### `.env` in this project
 
-Used for local and `Docker` environment configuration.
+Used for local and [`Docker`](./docker.md) environment configuration.
 
 ### `Python`
 
