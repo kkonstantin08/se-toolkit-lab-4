@@ -26,11 +26,9 @@ Docs:
 
 2. Follow the prompts to complete the installation.
 
-3. Open a new terminal after the installation finishes.
+3. [Open a new `VS Code Terminal`](./vs-code.md#open-a-new-vs-code-terminal) after the installation finishes.
 
-   [Open a new `VS Code Terminal`](./vs-code.md#open-a-new-vs-code-terminal).
-
-4. Verify the installation.
+4. Verify the installation by checking the version of the `nix` [program](./linux.md#program):
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
