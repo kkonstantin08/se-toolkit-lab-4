@@ -55,7 +55,7 @@ See [Browse a repository revision](./github.md#browse-a-repository-revision):
 - `<repo-url>` is <https://github.com/nixos/nixpkgs>.
 - `<revision>` is a revision that you want to browse.
 
-Example: `https://github.com/nixos/nixpkgs/tree/ac055f38c798b0d87695240c7b761b82fc7e5bc2`
+Example: `https://github.com/nixos/nixpkgs/tree/26eaeac4e409d7b5a6bf6f90a2a2dc223c78d915`
 
 ### Search `nixpkgs`
 
@@ -123,7 +123,7 @@ Complete these steps:
    The output should be as follows:
 
    ```terminal
-   ac055f38c798b0d87695240c7b761b82fc7e5bc2
+   26eaeac4e409d7b5a6bf6f90a2a2dc223c78d915
    ```
 
 2. Pin `nixpkgs` in your [flake registry](#flake-registry) to the same commit hash:
@@ -131,7 +131,7 @@ Complete these steps:
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
    ```terminal
-   nix registry pin nixpkgs github:nixos/nixpkgs/ac055f38c798b0d87695240c7b761b82fc7e5bc2
+   nix registry pin nixpkgs github:nixos/nixpkgs/26eaeac4e409d7b5a6bf6f90a2a2dc223c78d915
    ```
 
 ## Flake
