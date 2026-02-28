@@ -16,6 +16,10 @@
 
 VM hardening is the process of securing a virtual machine by reducing its attack surface.
 
+Docs:
+
+- [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks)
+
 ## Hardening steps
 
 ### Create a non-root user
@@ -44,7 +48,7 @@ VM hardening is the process of securing a virtual machine by reducing its attack
    usermod -aG sudo <username>
    ```
 
-4. Copy your [`SSH`](./ssh.md) key to the new user:
+4. Copy your [`SSH`](./ssh.md#what-is-ssh) key to the new user:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -66,9 +70,9 @@ VM hardening is the process of securing a virtual machine by reducing its attack
 
 ### Configure `ufw` firewall
 
-`ufw` (`Uncomplicated Firewall`) is a simple firewall for [`Linux`](./linux.md).
+`ufw` (`Uncomplicated Firewall`) is a simple firewall for [`Linux`](./linux.md#what-is-linux).
 
-1. Allow [`SSH`](./ssh.md):
+1. Allow [`SSH`](./ssh.md#what-is-ssh):
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -123,16 +127,23 @@ VM hardening is the process of securing a virtual machine by reducing its attack
    sudo apt install -y fail2ban
    ```
 
-3. Start and enable the service:
+3. Enable the service:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
    ```terminal
    sudo systemctl enable fail2ban
+   ```
+
+4. Start the service:
+
+   [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
+
+   ```terminal
    sudo systemctl start fail2ban
    ```
 
-4. Check the status:
+5. Check the status:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -142,7 +153,7 @@ VM hardening is the process of securing a virtual machine by reducing its attack
 
 ### Disable root `SSH` login
 
-1. Open the [`SSH`](./ssh.md) config:
+1. Open the [`SSH`](./ssh.md#what-is-ssh) config:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -163,7 +174,7 @@ VM hardening is the process of securing a virtual machine by reducing its attack
 
 ### Disable password authentication
 
-1. Open the [`SSH`](./ssh.md) config:
+1. Open the [`SSH`](./ssh.md#what-is-ssh) config:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -177,7 +188,7 @@ VM hardening is the process of securing a virtual machine by reducing its attack
    PasswordAuthentication no
    ```
 
-3. Save and exit.
+3. Save and exit (`Ctrl+O`, `Enter`, `Ctrl+X`).
 
 > [!IMPORTANT]
 > Make sure your `SSH` key is set up before disabling password authentication.
@@ -203,7 +214,7 @@ The `autochecker` user is a restricted user for the instructor to verify VM hard
    sudo chmod 700 /home/autochecker/.ssh
    ```
 
-3. Add the instructor's [`SSH`](./ssh.md) public key:
+3. Add the instructor's [`SSH`](./ssh.md#what-is-ssh) public key:
 
    [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
@@ -225,7 +236,7 @@ The `autochecker` user is a restricted user for the instructor to verify VM hard
 
 ### Restart `sshd`
 
-After changing the [`SSH`](./ssh.md) config, restart the `SSH` service.
+After changing the [`SSH`](./ssh.md#what-is-ssh) config, restart the `SSH` service.
 
 1. [Run using the `VS Code Terminal`](./vs-code.md#run-a-command-using-the-vs-code-terminal):
 
